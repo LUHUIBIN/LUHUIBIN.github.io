@@ -54,10 +54,10 @@ tags:
 
 **代码分析:**
 
-   在connect 函数中,itemDoubleClicked函数为QTreeWidge Class中内部定义的一个函数.当用户双击item时,这个函数发送信号被on_basicTreeWidget_clicked函数接收.
+   >在connect 函数中,itemDoubleClicked函数为QTreeWidge Class中内部定义的一个函数.当用户双击item时,这个函数发送信号被on_basicTreeWidget_clicked函数接收.
+   >
+   >在findItems函数中的第二个参数Qt::MatchContains|Qt::MatchRecursive为了保证树中的子节点也可以被搜索到。
 
-
-   在findItems函数中的第二个参数Qt::MatchContains|Qt::MatchRecursive为了保证树中的子节点也可以被搜索到。
 
 ```cpp
 
