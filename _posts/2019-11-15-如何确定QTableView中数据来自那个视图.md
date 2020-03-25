@@ -12,8 +12,8 @@ tags:
 ## 如何确定QTableView中数据来自那个视图
 ### 问题描述:
 
-  #### 在我的MySQL数据库中我创建了三个视图,通过如下代码指定和加载要使用的视图到QTableView中去.
-```c++
+ 在我的MySQL数据库中我创建了三个视图,通过如下代码指定和加载要使用的视图到QTableView中去.
+```cpp
         QSqlTableModel *model_b;
 
         QSqlTableModel *model_d;
@@ -68,13 +68,13 @@ tags:
     }
 
 ```
-  ####  然后在我的QTableView中如何判断传进来的是哪一个视图呢?
+ 然后在我的QTableView中如何判断传进来的是哪一个视图呢?
 
 #### 尝试的解决办法
 
   - 因为QAbstractItemModel是QSqlTableModel的父类,
 
-```c++
+```cpp
 
         const QAbstractItemModel *model;//定义model
         model = ui->basicTableView->currentIndex().model();
@@ -90,15 +90,15 @@ tags:
 
 > const QAbstractItemModel *QModelIndex::model() const
 
-####    Returns a pointer to the model containing the item that this index refers to. A const pointer to the model is returned because calls to non-const functions of the model might invalidate the model index and possibly crash your application.
+  Returns a pointer to the model containing the item that this index refers to. A const pointer to the model is returned because calls to non-const functions of the model might invalidate the model index and possibly crash your application.
 
 
-  #### 从提示来看我们应该是调用了model 的non_const 函数,导致程序崩溃.但不明白应该如何修改,或者这个思路错了.
+   从提示来看我们应该是调用了model 的non_const 函数,导致程序崩溃.但不明白应该如何修改,或者这个思路错了.
 
 
 #### 解决办法
 
-```c++
+```cpp
 
     void  MainWindow::on_basicTreeWidget_clicked(QTreeWidgetItem *item, int column)
 
@@ -125,4 +125,4 @@ tags:
     }
 ```
 
-####   使用这个思路即不去通过onTableSelectChange()函数来获取当前的model来自哪个视图,而是通过将变量 QSqlTableModel *model 中的model指针再次赋值使视图信息被更新.从而不需要去改变onTableSelectChange()函数实现这个功能,并且程序易于更新和维护.
+   使用这个思路即不去通过onTableSelectChange()函数来获取当前的model来自哪个视图,而是通过将变量 QSqlTableModel *model 中的model指针再次赋值使视图信息被更新.从而不需要去改变onTableSelectChange()函数实现这个功能,并且程序易于更新和维护.

@@ -27,7 +27,7 @@ tags:
 
 
 **关键代码:**
-```c++
+```cpp
 
    connect( ui->treeWidget,SIGNAL(itemDoubleClicked(QTreeWidgetItem *, int )),this,SLOT( on_basicTreeWidget_clicked( QTreeWidgetItem *, int )));
 
@@ -59,7 +59,8 @@ tags:
 
    在findItems函数中的第二个参数Qt::MatchContains|Qt::MatchRecursive为了保证树中的子节点也可以被搜索到。
 
-```c++   
+```cpp
+
    QList<QTreeWidgetItem *> QTreeWidget::findItems(const QString &text, Qt::MatchFlags flags, int column = 0) const
 
    Returns a list of items that match the given text, using the given flags, in the given column.
