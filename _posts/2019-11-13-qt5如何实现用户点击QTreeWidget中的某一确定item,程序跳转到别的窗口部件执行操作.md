@@ -7,7 +7,7 @@ author:     HB
 header-img: img/post-bg-qtproblem.jpg
 catalog: true
 tags:
-    - RaspberryPi
+    - QT
 ---
 
 ##  qt5如何实现用户点击QTreeWidget中的某一确定item ,程序跳转到别的窗口部件执行操作.
