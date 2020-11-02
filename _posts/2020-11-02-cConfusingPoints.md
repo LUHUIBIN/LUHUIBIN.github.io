@@ -69,3 +69,40 @@ const int *const A;//指针A和A指向的对象都不可变
 ## Pointer
 这张图足以说明一切
 ![](https://ftp.bmp.ovh/imgs/2020/11/c0a217a31dd0e5ba.jpg)
+
+
+
+
+## define
+```c
+#define ADD(a,b)   a+b
+```
+在一般使用的时候是没有问题的，但是如果遇到如：c * Add(a,b) * d的时候就会出现问题，代数式的本意是a+b然后去和c，d相乘，但是因为使用了define（它只是一个简单的替换），所以式子实际上变成了 ca + bd 所以，用#define要注意顺序
+
+一般我个人用#define在单片机程序上的话，我一般只做简单的替换。
+```c
+#define TIME_NUM   (60*60*24)UL//定义一个一天时间有多少秒
+```
+另外举一个例子：
+```c
+#define pin (int*);
+pin a,b;
+```
+本意是a和b都是int型指针，但是实际上变成int* a,b;
+a是int型指针，而b是int型变量。
+这是应该使用typedef来代替define，这样a和b就都是int型指针了。
+所以我们在定义的时候，养成一个良好的习惯，建议所有的层次都要加括号。
+
+而且，宏在单片机代码中用的很多，常数的替换、地址的偏移，等等都用得上
+用宏来修改移植代码更加便捷，代码更容易使人读懂。。。。
+
+#### test
+下面代码的含义：
+```c
+#define IS_GPIO_MODE(MODE) (((MODE) == GPIO_Mode_AIN) || ((MODE) == GPIO_Mode_IN_FLOATING) || \
+                            ((MODE) == GPIO_Mode_IPD) || ((MODE) == GPIO_Mode_IPU) || \
+                            ((MODE) == GPIO_Mode_Out_OD) || ((MODE) == GPIO_Mode_Out_PP) || \
+                            ((MODE) == GPIO_Mode_AF_OD) || ((MODE) == GPIO_Mode_AF_PP))
+```
+
+可以理解为定义了一个函数，函数名是IS_GPIO_MODE，参数MODE，后面的一大串为函数内部实现方法.
