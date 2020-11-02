@@ -165,7 +165,7 @@ optionalDecimal = optionalDecimal + 3
 optionalDecimal = nil
 //optionalDecimal +3  //报错 - 展开一个空的可选类型
 
- 
+
 //if 语句配合可选类型的展开
 var optionalInt: Int? = 3
 if optionalInt!= nil{
@@ -297,7 +297,7 @@ let cube = Box(cube: 6)
 
 
 #### 集合类型
-```python
+```swift
 //数组的声明
 var readingList: Array<String> = ["百年孤独","三国演义",]
 
