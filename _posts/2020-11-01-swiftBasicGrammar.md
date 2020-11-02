@@ -1,13 +1,12 @@
 ---
 layout:     post
 title:      swiftBasicGrammer
-subtitle:   
 date:       2020-11-01
 author:     HB
 header-img:
 catalog: true
 tags:
-    - programming
+    - swift
 ---
 source : [网易云课堂swift](https://study.163.com/course/courseMain.htm?courseId=1006380014)
 #### 1常亮变量与数据类型
