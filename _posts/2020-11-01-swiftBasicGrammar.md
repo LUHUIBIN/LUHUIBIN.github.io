@@ -294,3 +294,47 @@ let box = Box(length : 3, width : 2, height : 1)
 let cube = Box(cube: 6)
 
 ```
+
+
+#### 集合类型
+```python
+//数组的声明
+var readingList: Array<String> = ["百年孤独","三国演义",]
+
+//常用的声明方式
+var someOddNumber = [Int]()//声明空的数组
+var someEvenNumber = [2,4,6,8] //数组内的值必须是同一数据类型
+
+//两个数组可以用+来进行拼接
+//通过下表进行便利，若要访问数组下标越界会报错。
+
+
+//添加元素
+someOddNumber.append(1)
+someOddNumber += [5,6,7]
+
+//数组的遍历
+for item in completeList {
+	print(item)
+}
+
+
+//字典  与数组不同，字典是没有顺序的
+
+//字典的声明
+var dictionary = [String: Int]() //空字典
+var provincialCapitals = ["山东"："济南", "湖北":"武汉" ]
+
+//字典的访问和修改
+print(provincialCapitals["湖北"] ?? "数据未载入")   //字典其实是空合运算符，若字典内有湖北的省会，则打印其省会，若没有则打印数据未载入
+
+
+//集合类型
+
+//集合内元素若有重复，打印这个集合只会显示一次重复的元素
+
+
+var hobbiesA: Set = ["篮球"，"足球"，"乒乓球"]
+
+//两个集合何以计算交集并集和差集
+```
