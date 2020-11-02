@@ -9,7 +9,7 @@ tags:
     - C
 ---
 
-## static
+## Static
 
 #### 一、限制符号的作用域只在本程序文件
 若变量或函数（统称符号）使用static修饰，则只能在本程序文件内使用，其他程序文件不能调用（非static的可以通过extern 关键字声明该变量是在其他文件内定义的，此文件可调用）。不加static修饰的，则默认是可以被其他程序文件调用的。
@@ -53,7 +53,7 @@ int main
 
 
 
-## const
+## Const
 ```c
 const int *A; //const修饰指向的对象，A可变，A指向的对象不可变
 int const *A; //const修饰指向的对象，A可变，A指向的对象不可变
@@ -62,9 +62,10 @@ const int *const A;//指针A和A指向的对象都不可变
 ```
 **分析上述代码可以看出，程序从左向右逐个读取，前两个例子，const修饰的都是int,而第三个例子从左往右依次读取会发现const修饰的是*，即指针A自身的内存不可变，A保存的整型的地址是可读写的。**
 
+丑丑字的笔记
 ![](https://ftp.bmp.ovh/imgs/2020/11/00466dc50c449270.jpg)
 
 
-## pointer
-
+## Pointer
+这张图足以说明一切
 ![](https://ftp.bmp.ovh/imgs/2020/11/c0a217a31dd0e5ba.jpg)
