@@ -165,6 +165,39 @@ optionalDecimal = optionalDecimal + 3
 optionalDecimal = nil
 //optionalDecimal +3  //报错 - 展开一个空的可选类型
 
+ 
+//if 语句配合可选类型的展开
+var optionalInt: Int? = 3
+if optionalInt!= nil{
+	print("可选类型有值，值为\(optionalInt!)")
+}
+
+
+//可选绑定
+var optionalDouble: Double = 2.5
+if let optionalDouble = optionalDouble{   //如果可选类型有值，会自动展开并赋值给这个常量，如果可选类型没有值会自动跳过if语句，一般将常量名定义为和可选类型同名。
+	print("可选类型optionalDouble有值，值为\(optionalDouble)")
+}
+
+func register(username: String?, password: String?) -> String{
+	//if let username = username{
+		//if let password = password{
+			//return "注册成功，用户名\(username),密码\(password)"
+		//}else{
+			//print"密码未填写"}
+	//}else{
+		//return "用户名未填写"}
+	guard let password = password else{
+		return "用户名未注册"}
+	guard let password = password else{
+		return "密码未填写"}
+	return "注册成功，用户名\(username),密码\(password)"
+}
+
+register(username:ad,password:123)
+
+
+
 ```
 
 
