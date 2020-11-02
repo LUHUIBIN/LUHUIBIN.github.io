@@ -69,7 +69,7 @@ const int *const A;//指针A和A指向的对象都不可变
 ## Pointer
 这张图足以说明一切
 ![](https://ftp.bmp.ovh/imgs/2020/11/c0a217a31dd0e5ba.jpg)
-
+https://github.com/LUHUIBIN/LUHUIBIN.github.io
 
 
 
