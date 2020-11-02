@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      swiftBasicGrammer
+title:      SwiftBasicGrammer
 date:       2020-11-01
 author:     HB
 header-img:
