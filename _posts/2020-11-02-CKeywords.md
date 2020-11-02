@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      cConfusingPoints
+title:      CKeywords
 date:       2020-11-02
 author:     HB
 header-img:
 catalog: true
-tags:
+tags: static,const,define
     - C
 ---
 
