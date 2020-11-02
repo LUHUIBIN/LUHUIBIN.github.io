@@ -4,7 +4,7 @@ title:      Qt5如何实现用户点击QTreeWidget中的某一确定item ,程序
 subtitle:   
 date:       2019-11-13
 author:     HB
-header-img: img/post-bg-qtproblem.jpg
+header-img:
 catalog: true
 tags:
     - QT

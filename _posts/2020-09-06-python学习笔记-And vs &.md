@@ -4,7 +4,7 @@ title:      python学习笔记-And vs &
 subtitle:   And 和 &的区别
 date:       2020-09-06
 author:     HB
-header-img: img/post-bg-ps4.jp
+header-img:
 catalog: true
 tags:
     - Python

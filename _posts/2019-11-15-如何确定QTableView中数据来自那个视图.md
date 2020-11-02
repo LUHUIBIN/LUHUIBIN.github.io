@@ -4,7 +4,7 @@ title:      如何确定QTableView中数据来自那个视图
 subtitle:   
 date:       2019-11-15
 author:     HB
-header-img: img/post-bg-qtques.jpg
+header-img:
 catalog: true
 tags:
     - QT
