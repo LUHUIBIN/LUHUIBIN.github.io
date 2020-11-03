@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      c language keywords
+title:      C language keywords
 date:       2020-11-02
 author:     HB
 header-img:
