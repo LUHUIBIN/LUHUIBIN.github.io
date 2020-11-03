@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      CKeywords
+title:      c language keywords
 date:       2020-11-02
 author:     HB
 header-img:
@@ -63,8 +63,7 @@ const int *const A;//指针A和A指向的对象都不可变
 **分析上述代码可以看出，程序从左向右逐个读取，前两个例子，const修饰的都是int,而第三个例子从左往右依次读取会发现const修饰的是*，即指针A自身的内存不可变，A保存的整型的地址是可读写的。**
 
 丑丑字的笔记
-![photo_2020-11-02_21-09-32.jpg](https://i.loli.net/2020/11/02/mlPQjo6yRMWCahr.jpg)
-
+![image.png](https://i.loli.net/2020/11/03/qtHpJhle1g5YvSB.png)
 ## Pointer
 这张图足以说明一切
 ![photo_2020-11-02_21-09-32.jpg](https://i.loli.net/2020/11/02/mlPQjo6yRMWCahr.jpg)
