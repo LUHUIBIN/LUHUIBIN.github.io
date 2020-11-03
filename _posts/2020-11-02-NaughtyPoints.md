@@ -8,4 +8,4 @@ catalog: true
 tags:
     - NaughtyPoints
 ---
-- 一个搜索引擎，搜索结果只显示别人的博客。
+- 一个搜索引擎，搜索结果只显示别人的博客
