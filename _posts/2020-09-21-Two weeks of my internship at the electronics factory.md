@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      电子厂实习与中专学生的困境
+title:      Two weeks of my internship at the electronics factory.
 date:       2020-09-06
 author:     HB
 header-img:
 catalog: true
 tags:
-    - We all have a bright future
+    - We all have bright futures ahead of us
 ---
 
 种种原因吧，被安排有一个月的生产实习，具体的内容就是在电子厂做一线操作员，随便说说我这几天的见闻。

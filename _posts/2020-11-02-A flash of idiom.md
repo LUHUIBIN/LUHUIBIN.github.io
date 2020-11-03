@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      A flash of idiom
+title:      a flash of idiom
 date:       2020-11-02
 author:     HB
 header-img:
