@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      ruby on rails 搭建twitter笔记
-date:       2020-11-15
+date:       2020-12-06
 author:     HB
 header-img:
 catalog: true
