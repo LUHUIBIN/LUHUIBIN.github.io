@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      C language keywords
+title:      C_for_interviews
 date:       2020-11-02
 author:     HB
 header-img:
