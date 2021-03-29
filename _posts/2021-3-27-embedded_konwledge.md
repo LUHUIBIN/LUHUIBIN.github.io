@@ -83,3 +83,5 @@ chech wiki
 # linux下交叉编译windows程序
 http://www.xefan.com/archives/83663.html
 
+# https原理与过程
+https://blog.imallen.wang/2016/11/20/2016-11-20-httpsyuan-li-yu-guo-cheng/
