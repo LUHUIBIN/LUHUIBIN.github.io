@@ -85,3 +85,15 @@ http://www.xefan.com/archives/83663.html
 
 # https原理与过程
 https://blog.imallen.wang/2016/11/20/2016-11-20-httpsyuan-li-yu-guo-cheng/
+
+
+# 嵌入式软件工程师杂谈之一 —– BSP工程师
+https://luomuxiaoxiao.com/?p=170
+
+# 模拟实现atoi函数
+https://dmdada.github.io/2018/05/27/atoi%E6%A8%A1%E6%8B%9F%E5%AE%9E%E7%8E%B0/
+# GDP TCP 和IP数据报
+https://dmdada.github.io/
+
+# Http协议的三次握手，四次挥手
+https://www.bilibili.com/read/cv5467505/
