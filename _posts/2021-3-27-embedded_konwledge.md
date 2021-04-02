@@ -236,4 +236,30 @@ UDP以其简单、传输快的优势，在越来越多场景下取代了TCP, 如
 
 基于UDP对实时性要求较为严格的情况下，采用自定义重传机制，能够把丢包产生的延迟降到最低，尽量减少网络问题造成的影响。
 
+# sizeof,strlen,数组,字符串整在一起的那些坑
+https://www.yanbinghu.com/2019/11/17/7085.html
 
+# 有限状态机+函数指针-C语言实现
+https://www.yanbinghu.com/2019/11/14/38034.html
+
+# 一句话帮你理解typedef的用法
+https://www.yanbinghu.com/2019/09/01/25828.html
+
+# C语言函数指针
+**pretty good blog**
+https://www.yanbinghu.com/2019/01/03/3593.html
+
+# fork函数详解
+https://www.yanbinghu.com/2019/08/11/28423.html
+
+# 对进程和线程的一些总结
+https://www.yanbinghu.com/2018/09/07/47517.html
+
+# 网络编程-从TCP连接的建立说起
+https://www.yanbinghu.com/2019/07/02/52476.html
+
+# 网络编程-再看TCP的四次挥手
+https://www.yanbinghu.com/2019/07/14/62738.html
+
+# C语言中的传值与传指针
+https://editor.sharecmd.com/
