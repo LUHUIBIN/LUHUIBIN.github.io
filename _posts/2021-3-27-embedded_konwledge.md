@@ -263,3 +263,11 @@ https://www.yanbinghu.com/2019/07/14/62738.html
 
 # C语言中的传值与传指针
 https://editor.sharecmd.com/
+
+# C语言网络编程干货
+https://www.jianshu.com/p/0faee14c10cb
+
+# 新手也能看懂，消息队列其实很简单
+https://www.jianshu.com/p/36a7775b04ec
+
+
